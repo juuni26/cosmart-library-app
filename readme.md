@@ -55,7 +55,7 @@ Author : *Junio Akarda*
 - **Method**: GET
 - **Description**: Returns a list of available genres.
 ### Example Usage
-- **Request**: `GET /getGenre`
+- **Request**: `GET /api/genre`
 - **Response**: `{ "genre_list": ["humor", "fantasy", "literature"], "success": true }`
 ---
 ### 2. Get All Books or Specified Book
@@ -64,7 +64,7 @@ Author : *Junio Akarda*
 - **Parameters (optional)**: `genre`, `author`, `title`
 - **Description**: Retrieve books with optional filters such as genre, author, and title.
 ### Example Usage
-- **Request**: `GET /api/getBooks?genre=fantasy`
+- **Request**: `GET /api/books?genre=fantasy`
 - **Response**: `{ "genre": "fantasy", "title": "all", "author": "all", "books": [...], "success": true }`
 ---
 ### 3. Get Schedule Pick Up (filtered by date greater than now)
@@ -73,7 +73,7 @@ Author : *Junio Akarda*
 - **Method**: GET
 - **Description**: Retrieve pickup schedules for books.
 ### Example Usage
-- **Request**: `GET /getSchedule`
+- **Request**: `GET /api/schedule`
 - **Response**: `{ "schedule_list": [...], "success": true }`
 
 --- 
